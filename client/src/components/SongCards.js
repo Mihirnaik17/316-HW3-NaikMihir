@@ -1,5 +1,5 @@
-import { useContext } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useContext, useEffect } from 'react'
+import { useHistory, useParams } from 'react-router-dom'
 import SongCard from './SongCard.js'
 import EditSongModal from './EditSongModal.js'
 import { GlobalStoreContext } from '../store/index.js'
@@ -11,11 +11,24 @@ import { GlobalStoreContext } from '../store/index.js'
 */
 function SongCards() {
     const { store } = useContext(GlobalStoreContext);
+    const { id } = useParams(); // GET THE PLAYLIST ID FROM THE URL
     store.history = useHistory();
+
+    // THIS EFFECT HOOK WILL TRIGGER THE DATA LOADING WHEN THE URL ID CHANGES
+    useEffect(() => {
+        store.setCurrentList(id);
+    }, [id]);
+
     let modalJSX = "";
     if (store.isEditSongModalOpen()) {
         modalJSX = <EditSongModal />;
     }
+
+    // WAITS FOR THE DATA TO BE LOADED BEFORE TRYING TO RENDER
+    if (!store.currentList) {
+        return <div>Loading...</div>
+    }
+
     return (
         <div id="playlist-cards">
         {

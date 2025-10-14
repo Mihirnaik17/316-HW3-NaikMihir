@@ -17,6 +17,10 @@ const PlaylistCards = () => {
     }, []);
 
     function handleCreateNewList() {
+        // ADD THIS GUARD CLAUSE
+        if (store.currentList) {
+            return;
+        }
         store.createNewList();
     }
     let listCard = "";
@@ -39,6 +43,8 @@ const PlaylistCards = () => {
                     type="button"
                     id="add-list-button"
                     onClick={handleCreateNewList}
+
+                    disabled={store.currentList !== null}
                     className="playlister-button"
                     value="+" />
                 Your Lists
@@ -49,7 +55,7 @@ const PlaylistCards = () => {
                 }
                 {
                     deleteListModal
-                }                
+                }               
             </div>
         </div>)
 }
