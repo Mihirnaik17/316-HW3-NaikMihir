@@ -83,6 +83,40 @@ updatePlaylist = async (req, res) => {
     })
 }
 
+deletePlaylist = async (req, res) => {
+    await Playlist.findOneAndDelete({ _id: req.params.id }, (err, playlist) => {
+        if (err) {
+            return res.status(400).json({ success: false, error: err })
+        }
+
+        // If no playlist was found with that ID
+        if (!playlist) {
+            return res
+                .status(404)
+                .json({ success: false, error: `Playlist not found` })
+        }
+
+        // Send a success response
+        return res.status(200).json({ success: true, data: playlist })
+    }).catch(err => console.log(err))
+}
+
+getPlaylistsByQuery = async (req, res) => {
+    const searchQuery = req.query.q;
+
+    if (!searchQuery) {
+        return res.status(400).json({ success: false, error: 'You must provide a search query.' });
+    }
+    const queryRegex = new RegExp('^' + searchQuery, 'i');
+
+    await Playlist.find({ name: queryRegex }, (err, playlists) => {
+        if (err) {
+            return res.status(400).json({ success: false, error: err })
+        }
+        return res.status(200).json({ success: true, data: playlists })
+    }).catch(err => console.log(err))
+}
+
 
 
 readPlaylistById = async (req, res) => {
@@ -138,5 +172,7 @@ module.exports = {
     readAllPlaylists,
     readPlaylistPairs,
     readPlaylistById,
-    updatePlaylist
+    updatePlaylist,
+    deletePlaylist,
+    getPlaylistsByQuery
 }
