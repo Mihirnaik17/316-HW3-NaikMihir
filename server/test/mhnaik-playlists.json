@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Old Songs I Like",
+        "songs": [
+            { "title": "Bohemian Rhapsody", "artist": "Queen", "year": 1975, "youTubeId": "fJ9rUzIMcZQ" },
+            { "title": "Stairway to Heaven", "artist": "Led Zeppelin", "year": 1971, "youTubeId": "QkF3oxziUI4" },
+            { "title": "Like a Rolling Stone", "artist": "Bob Dylan", "year": 1965, "youTubeId": "IwOfCgkyEj0" },
+            { "title": "What's Going On", "artist": "Marvin Gaye", "year": 1971, "youTubeId": "H-kA3UtBj4M" },
+            { "title": "Respect", "artist": "Aretha Franklin", "year": 1967, "youTubeId": "6FOUqQt3Kg0" },
+            { "title": "Good Vibrations", "artist": "The Beach Boys", "year": 1966, "youTubeId": "Eab_beh07HU" },
+            { "title": "Billie Jean", "artist": "Michael Jackson", "year": 1982, "youTubeId": "Zi_XLOBDo_Y" },
+            { "title": "Smells Like Teen Spirit", "artist": "Nirvana", "year": 1991, "youTubeId": "hTWKbfoikeg" },
+            { "title": "Hotel California", "artist": "Eagles", "year": 1976, "youTubeId": "09839DpTctU" },
+            { "title": "Sweet Child o' Mine", "artist": "Guns N' Roses", "year": 1987, "youTubeId": "1w7OgIMMRc4" },
+            { "title": "Imagine", "artist": "John Lennon", "year": 1971, "youTubeId": "YkgkThdzX-8" },
+            { "title": "I Want to Hold Your Hand", "artist": "The Beatles", "year": 1963, "youTubeId": "jenWBYzBv_I" },
+            { "title": "Hey Jude", "artist": "The Beatles", "year": 1968, "youTubeId": "A_MjCqQoLLA" },
+            { "title": "Light My Fire", "artist": "The Doors", "year": 1967, "youTubeId": "deB_u-to-IE" },
+            { "title": "No Woman, No Cry", "artist": "Bob Marley & The Wailers", "year": 1974, "youTubeId": "IT8XvzIfi4U" },
+            { "title": "Born to Run", "artist": "Bruce Springsteen", "year": 1975, "youTubeId": "IxuThNgl3YA" },
+            { "title": "Purple Haze", "artist": "Jimi Hendrix", "year": 1967, "youTubeId": "WGoDaYjdfSg" },
+            { "title": "London Calling", "artist": "The Clash", "year": 1979, "youTubeId": "EfK-WX2pa8c" },
+            { "title": "Heroes", "artist": "David Bowie", "year": 1977, "youTubeId": "lXgkuM2NhYI" },
+            { "title": "Yesterday", "artist": "The Beatles", "year": 1965, "youTubeId": "wXTJBr9tt8Q" }
+        ]
+    },
+    {
+        "name": "My Favorite Songs",
+        "songs": [
+            { "title": "Paranoid Android", "artist": "Radiohead", "year": 1997, "youTubeId": "sPLEbAVdZkM" },
+            { "title": "All My Friends", "artist": "LCD Soundsystem", "year": 2007, "youTubeId": "uDRLW748j68" },
+            { "title": "Idioteque", "artist": "Radiohead", "year": 2000, "youTubeId": "X7_w_3n5_4g" },
+            { "title": "Pyramid Song", "artist": "Radiohead", "year": 2001, "youTubeId": "3M_Gg1xAHE4" },
+            { "title": "Dance Yrself Clean", "artist": "LCD Soundsystem", "year": 2010, "youTubeId": "OoA0cTC228M" },
+            { "title": "Runaway", "artist": "Kanye West", "year": 2010, "youTubeId": "Bm5iA4Zupek" },
+            { "title": "Somebody Told Me", "artist": "The Killers", "year": 2004, "youTubeId": "Y5fBdpreJiU" },
+            { "title": "Mr. Brightside", "artist": "The Killers", "year": 2003, "youTubeId": "gGdGFtwCNBE" },
+            { "title": "Maps", "artist": "Yeah Yeah Yeahs", "year": 2003, "youTubeId": "oIIxlgcuQRU" },
+            { "title": "Take Me Out", "artist": "Franz Ferdinand", "year": 2004, "youTubeId": "Ijk4j-r7qPA" },
+            { "title": "Float On", "artist": "Modest Mouse", "year": 2004, "youTubeId": "CTAud5O7Qqk" },
+            { "title": "Rebellion (Lies)", "artist": "Arcade Fire", "year": 2004, "youTubeId": "1yqgoEAzDns" },
+            { "title": "Do I Wanna Know?", "artist": "Arctic Monkeys", "year": 2013, "youTubeId": "bpOSxM0rNPM" },
+            { "title": "The Less I Know The Better", "artist": "Tame Impala", "year": 2015, "youTubeId": "sBzrzS1Ag_g" },
+            { "title": "New Slang", "artist": "The Shins", "year": 2001, "youTubeId": "zYwCmcB0XMw" },
+            { "title": "Such Great Heights", "artist": "The Postal Service", "year": 2003, "youTubeId": "0wrsZog8qXg" },
+            { "title": "Seven Nation Army", "artist": "The White Stripes", "year": 2003, "youTubeId": "0J2QdDbelmY" },
+            { "title": "Last Nite", "artist": "The Strokes", "year": 2001, "youTubeId": "TOypSnKFHrE" },
+            { "title": "Losing My Edge", "artist": "LCD Soundsystem", "year": 2002, "youTubeId": "6xG4oFny2Pk" },
+            { "title": "Skinny Love", "artist": "Bon Iver", "year": 2007, "youTubeId": "ssdgFoHLwnk" }
+        ]
+    },
+    {
+        "name": "Interesting and Unusual Songs",
+        "songs": [
+            { "title": "O Superman", "artist": "Laurie Anderson", "year": 1981, "youTubeId": "Vkfpi2H8tOE" },
+            { "title": "Windowlicker", "artist": "Aphex Twin", "year": 1999, "youTubeId": "uP_37_Baa9s" },
+            { "title": "Peaches en Regalia", "artist": "Frank Zappa", "year": 1969, "youTubeId": "RG_EaIqEkeo" },
+            { "title": "Tarkus", "artist": "Emerson, Lake & Palmer", "year": 1971, "youTubeId": "WKNOlDtZluU" },
+            { "title": "Once in a Lifetime", "artist": "Talking Heads", "year": 1980, "youTubeId": "5IsSpAOD6K8" },
+            { "title": "Helicopter", "artist": "Bloc Party", "year": 2004, "youTubeId": "2R6S5CJWlco" },
+            { "title": "21st Century Schizoid Man", "artist": "King Crimson", "year": 1969, "youTubeId": "7_rBidCkJxo" },
+            { "title": "The Great Gig in the Sky", "artist": "Pink Floyd", "year": 1973, "youTubeId": "cVBCE3gaNxc" },
+            { "title": "Cliffs of Dover", "artist": "Eric Johnson", "year": 1990, "youTubeId": "aiYCXFggI_s" },
+            { "title": "Maggot Brain", "artist": "Funkadelic", "year": 1971, "youTubeId": "JOKn33-q4Ao" },
+            { "title": "Telegraph Road", "artist": "Dire Straits", "year": 1982, "youTubeId": "dd3btVhDHyA" },
+            { "title": "Roundabout", "artist": "Yes", "year": 1971, "youTubeId": "cPCLFtxpadE" },
+            { "title": "Come On! Feel the Illinoise!", "artist": "Sufjan Stevens", "year": 2005, "youTubeId": "rmJ2l_R3L3w" },
+            { "title": "4'33\"", "artist": "John Cage", "year": 1952, "youTubeId": "JTEFKFiXSx4" },
+            { "title": "Poème Symphonique for 100 metronomes", "artist": "György Ligeti", "year": 1962, "youTubeId": "QCp7bL-AWvw" },
+            { "title": "I Am Sitting in a Room", "artist": "Alvin Lucier", "year": 1969, "youTubeId": "fAxHlMCY_K4" },
+            { "title": "Threnody to the Victims of Hiroshima", "artist": "Krzysztof Penderecki", "year": 1960, "youTubeId": "Dp3BlFZWJNA" },
+            { "title": "Viðrar vel til loftárása", "artist": "Sigur Rós", "year": 1999, "youTubeId": "akYwy5dRRrA" },
+            { "title": "Music for 18 Musicians", "artist": "Steve Reich", "year": 1978, "youTubeId": "E_j-M2S_kAw" },
+            { "title": "Oh Comely", "artist": "Neutral Milk Hotel", "year": 1998, "youTubeId": "Z-32_aC-LCw" }
+        ]
+    }
+]
