@@ -117,6 +117,54 @@ getPlaylistsByQuery = async (req, res) => {
     }).catch(err => console.log(err))
 }
 
+getAllSongs = async (req, res) => {
+    // Build the matching criteria from the query parameters
+    const matchCriteria = {};
+    if (req.query.title) {
+        matchCriteria['songs.title'] = { $regex: new RegExp(req.query.title, 'i') };
+    }
+    if (req.query.artist) {
+        matchCriteria['songs.artist'] = { $regex: new RegExp(req.query.artist, 'i') };
+    }
+    if (req.query.year) {
+        // Ensure year is treated as a number
+        const year = parseInt(req.query.year);
+        if (!isNaN(year)) {
+            matchCriteria['songs.year'] = year;
+        }
+    }
+
+    try {
+        const uniqueSongs = await Playlist.aggregate([
+            { $unwind: '$songs' },
+            { $match: matchCriteria },
+            {
+                $group: {
+                    _id: { 
+                        title: '$songs.title', 
+                        artist: '$songs.artist', 
+                        year: '$songs.year',
+                        youTubeId: '$songs.youTubeId'
+                    }
+                }
+            },
+            {
+                $project: {
+                    _id: 0, // Exclude the default _id field
+                    title: '$_id.title',
+                    artist: '$_id.artist',
+                    year: '$_id.year',
+                    youTubeId: '$_id.youTubeId'
+                }
+            }
+        ]);
+        return res.status(200).json({ success: true, data: uniqueSongs });
+    } catch (err) {
+        console.log(err);
+        return res.status(400).json({ success: false, error: err });
+    }
+}
+
 
 
 readPlaylistById = async (req, res) => {
@@ -174,5 +222,6 @@ module.exports = {
     readPlaylistById,
     updatePlaylist,
     deletePlaylist,
-    getPlaylistsByQuery
+    getPlaylistsByQuery,
+    getAllSongs
 }
